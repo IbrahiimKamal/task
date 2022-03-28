@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import Navbar from './components/Navbar/Navbar';
+import Button from './components/Button/Button';
+import Card from './components/Card/Card';
+import Order from './components/Order/Order';
+import MediaFile from './components/MediaFile/MediaFile';
+import DonutChart from './components/DonutChart/DonutChart';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <div className="main-container__sidebar">
+        <Sidebar />
+      </div>
+      <div className="container main-container__content">
+        <Navbar />
+        <div className="main-container__area">
+          <div className="main-container__area-col-1">
+            <div className="main-container__area-navbar">
+              <h3>My Files</h3>
+              <Button title="Add New" isIcon />
+            </div>
+            <div className="main-container__card">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+            <div className="main-container__footer">
+              <div className="main-container__dash">
+                <Order />
+              </div>
+              <div className="main-container__chart"></div>
+            </div>
+          </div>
+          <div className="main-container__area-col-2">
+            <MediaFile />
+            <MediaFile />
+            <MediaFile />
+            <MediaFile />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

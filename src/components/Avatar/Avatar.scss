@@ -1,0 +1,25 @@
+.avatar {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 0.8rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+
+  &__image {
+    width: 25px;
+    border-radius: 1rem;
+  }
+
+  &__text {
+    color: #000;
+    font-weight: 600;
+  }
+
+  &__icon {
+    color: #102941;
+  }
+}

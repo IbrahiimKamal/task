@@ -1,0 +1,14 @@
+.app-button {
+  background: #2697ff;
+  border: 0;
+  outline: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.7rem;
+  font-size: 15px;
+  font-weight: 300;
+
+  &__icon {
+    color: red;
+  }
+}

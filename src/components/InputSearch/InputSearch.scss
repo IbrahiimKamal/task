@@ -1,0 +1,30 @@
+.input-search {
+  position: relative;
+  margin-left: 3.5rem;
+
+  &__input {
+    border: 0;
+    padding: 0.8rem 3rem 0.8rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+    &::placeholder {
+      color: #acb4bd;
+      font-size: 14px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 7%;
+    right: 2%;
+    background: #2697ff;
+    color: #fff;
+    display: inline-block;
+    padding: 0.6rem 0.7rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

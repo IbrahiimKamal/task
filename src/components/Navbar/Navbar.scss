@@ -1,0 +1,17 @@
+.navbar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    width: 40%;
+  }
+
+  &__list {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

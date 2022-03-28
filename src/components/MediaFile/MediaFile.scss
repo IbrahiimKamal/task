@@ -1,0 +1,32 @@
+.media-file {
+  border: 3px solid #deefff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 0.8rem;
+  }
+
+  &__content {
+    p {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    span {
+      color: #d3d6da;
+    }
+  }
+
+  &__size {
+    font-weight: 700;
+  }
+}
